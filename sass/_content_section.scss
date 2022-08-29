@@ -1,0 +1,108 @@
+.content {
+    .content-sub-wrapper {
+        padding: 0;
+
+        p {
+            line-height: 26px;
+        }
+
+        .share-btn-wrapper {
+            border-bottom: 0.8px solid #828282;
+
+            li:not(:first-child) {
+                background: #434343;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                margin-right: 0.5em;
+                text-align: center;
+            }
+
+            li:first-child {
+                font-weight: 700;
+                color: #434343;
+            }
+        }
+
+        .content-details-article {
+            letter-spacing: 0.02em;
+            color: #434343;
+        }
+
+        .class-schedule-wrapper {
+            .class-schedule-heading {
+                font-size: 1.8em;
+                font-weight: 900;
+                color: #434343;
+            }
+
+            .sub-heading:not(.class-schedule-time-main) {
+                font-weight: 700;
+                color: #434343;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    padding: 0.7em;
+
+                    .class-timing {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .review-section-content {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #F39B4E;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+
+            p::before {
+                color: #00ACB4;
+                content: "John Doe";
+                font-weight: 700;
+
+            }
+
+            .review-section-button {
+                border: 0.5px solid red;
+                color: #DC3636;
+                background: white;
+                border-radius: 28px;
+                padding: 0.7em 2em;
+            }
+
+        }
+
+        .main-quotes-wrapper {
+            background-image: url(/icons/quotes_back_image.svg);
+            width: fit-content;
+            height: 20em;
+            position: relative;
+
+            .main-quotes-content {
+                width: 953px;
+                height: 173px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+                border-radius: 16px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                padding: 2.5em 2em 2em 2em;
+            }
+        }
+
+
+    }
+
+
+}

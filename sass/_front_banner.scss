@@ -1,0 +1,106 @@
+@import 'utilities';
+
+.front-banner__wrapper {
+    .front-banner__second_wrapper {
+        background: white;
+        width: 80%;
+        margin: auto;
+        padding: 2em;
+
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    .front-banner-description {
+        width: 65%;
+    }
+
+    .front-banner__heading {
+        font-size: 36px;
+        font-weight: 900;
+        color: #434343
+    }
+
+    ul {
+        @include flex-center__align-item;
+
+        li {
+            margin-right: 15px;
+            border-radius: 30px;
+            padding: 7px 32px;
+            font-weight: 500;
+            font-size: 1em;
+
+            img {
+                padding-right: 5px;
+            }
+        }
+
+        li:first-child {
+            border: 1px solid #434343;
+        }
+
+        li:nth-child(2) {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #DC3636;
+        }
+
+        li:nth-child(3) {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #434343;
+
+        }
+
+    }
+
+    .front-banner__price-board {
+        border: 0.5px solid #434343;
+        text-align: center;
+        width: 20em;
+        border-radius: 8px;
+        height: fit-content;
+
+        .price-board__member-no_member {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            color: #434343;
+            font-weight: 700;
+            font-size: 1em;
+
+            .know-member {
+                font-size: 0.75em;
+            }
+
+            .class-price {
+                font-size: 1.5em;
+            }
+        }
+
+        .membership-btn {
+            width: 100%;
+            background: #DC3636;
+            color: white;
+            border-style: none;
+            padding: 18px;
+            border-radius: 8px;
+        }
+    }
+
+    .reduced-rate-btn {
+        margin-top: 3em;
+        text-align: end;
+
+        .button {
+            color: #434343;
+            border: 1px solid #434343;
+            background: white;
+            padding: 10px 30px;
+            border-radius: 8px;
+            width: 25%;
+            font-weight: 700;
+        }
+    }
+
+}

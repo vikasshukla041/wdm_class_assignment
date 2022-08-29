@@ -1,0 +1,74 @@
+@import 'utilities';
+
+.similar-class-section {
+    .similar-class-wrapper {
+
+        .sub-heading {
+            @include sub-heading(#434343, 1.6em, 700);
+        }
+
+        p {
+            line-height: 28px;
+            font-size: 1.2em;
+
+            .btn {
+                color: #DC3636;
+                padding-left: 0;
+            }
+        }
+
+    }
+
+}
+
+.remote-class-section {
+    .remote-class-wrapper {
+        border-bottom: 0.8px solid #828282;
+
+        .sub-heading {
+            @include sub-heading(#434343, 1.6em, 700);
+        }
+
+        article {
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            font-size: 1.2em;
+            color: #434343;
+        }
+
+        .remote-class-btn {
+            padding: 2em 0 0 0;
+
+            a {
+                color: #DC3636;
+                padding-right: 2em;
+            }
+        }
+    }
+
+}
+
+.cancellation-policy {
+    .sub-heading {
+        @include sub-heading(#434343, 1.6em, 700);
+    }
+
+    p {
+        font-size: 1em;
+        color: #434343;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+
+        span {
+            color: #DC3636;
+            font-weight: 700;
+        }
+
+        span::after {
+            content: "\a";
+            white-space: pre;
+        }
+
+    }
+
+}

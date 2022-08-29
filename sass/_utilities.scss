@@ -1,0 +1,27 @@
+@mixin flex_centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center__align-item {
+    display: flex;
+    align-items: center;
+}
+
+@mixin button_main {
+    background: #DC3636;
+}
+
+@mixin center_div_board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin sub-heading ($color, $size, $font_weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $font_weight;
+}

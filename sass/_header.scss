@@ -1,0 +1,50 @@
+@import 'utilities';
+
+header {
+    @include flex-center__align-item;
+    justify-content: space-between;
+    height: 10em;
+    width: 80%;
+    margin: auto;
+
+    .company-logo {
+        p {
+            width: 12em;
+            height: 5em;
+            background: #D9D9D9;
+            @include flex_centre;
+        }
+    }
+
+    .main-navigation-bar-wrapper {
+        img {
+            width: 2.5em;
+            padding-right: 1em;
+        }
+
+        ul {
+            @include flex-center__align-item;
+            justify-content: end;
+
+            li {
+                margin-left: 4em;
+                font-weight: 600;
+
+            }
+
+        }
+
+        nav {
+            padding-top: 1em;
+
+            li:last-of-type {
+                background: #DC3636;
+                border-radius: 50px;
+                color: white;
+                padding: 10px 30px;
+            }
+        }
+    }
+
+
+}

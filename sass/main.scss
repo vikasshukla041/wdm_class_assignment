@@ -1,0 +1,19 @@
+@import 'header';
+@import 'utilities';
+@import 'front_banner';
+@import 'content_section';
+@import 'similar_class_section';
+@import 'footer';
+
+* {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    background: white;
+    padding: 2em;
+}
