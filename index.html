@@ -1,336 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/main.css" />
-
-    <title>WDM CLASSES</title>
 </head>
+
+<style>
+    body {
+
+        background-image: url('grunge_patterns.jpg');
+        background-attachment: fixed;
+        color: #333;
+    }
+
+    .box {
+        border-radius: 3px;
+        background: rgba(101, 101, 101, 0.7);
+        margin: auto;
+        padding: 12px;
+    }
+
+    .lightbox {
+        zoom: 1.5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 10, 0.8);
+        text-align: center;
+        margin: auto;
+
+    }
+
+    div.horizontal {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    div.vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #955;
+        text-align: center;
+    }
+
+    ::-moz-placeholder {
+        color: #955;
+        text-align: center;
+    }
+
+    :-ms-input-placeholder {
+        color: #955;
+        text-align: center;
+    }
+</style>
 
 <body>
 
-    <section class="main_structure_section">
-
-        <!-- Header Start -->
-        <header>
-            <div class="company-logo">
-                <p><a href="#"></a>LOGO</p>
-            </div>
-            <div class="main-navigation-bar-wrapper">
-                <div class="header-search">
-                    <ul>
-                        <li><a href="#"><img src="./icons/search_icon.svg" /></a>Search</li>
-                        <li><a href="#"><img src="./icons/sign-in_icon.svg" /></a>Sign in</li>
-                        <li><a href="#"><img src="./icons/cart_icon.svg" /></a>(0)</li>
-                    </ul>
-                </div>
-                <nav>
-                    <ul>
-                        <li>Classes</li>
-                        <li>Classes</li>
-                        <li>Classes</li>
-                        <li>Classes</li>
-                        <li>Classes</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Header End -->
-
-        <section class="main_content_body_structure">
-            <!-- Front Banner Start -->
-            <section class="front-banner__wrapper jumbotron jumbotron-fluid mb-0 pb-5">
-                <section class="front-banner__second_wrapper container">
-                    <main>
-                        <div class="front-banner-description">
-                            <p class="front-banner__heading">Let's Begin Here: Approaching Craft in Fiction Through
-                                Character
-                            </p>
-                            <div class="front-banner-author-details">
-                                <ul>
-                                    <li><img src="./icons/profile_icon.svg" class="pr-2" />David William Hill</li>
-                                    <li>Fiction</li>
-                                    <li>Advanced</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="front-banner__price-board">
-                            <div class="price-board__member-no_member">
-                                <div class="membership">
-                                    <p class="class-price class-price-member">$ 200</p>
-                                    <p class="know-member">MEMBER</p>
-                                </div>
-                                <div class="non-membership">
-                                    <p class="class-price class-price_no_member">$ 249</p>
-                                    <p class="know-member">Non MEMBER</p>
-                                </div>
-                            </div>
-                            <input type="button" class="membership-btn" value="Sign UP">
-                        </div>
-                    </main>
-                    <div class="reduced-rate-btn">
-                        <input type="button" class="button" value="Apply for Reduced-Rate Spot" />
-                    </div>
-                </section>
-            </section>
-            <!-- Front Banner ENd -->
-
-            <!-- main-center-content start -->
-            <section class="content jumbotron jumbotron-fluid pt-0 mb-0">
-                <div class="container content-sub-wrapper">
-                    <div class="row mr-0">
-                        <div class="col-8 content-article_wrapper p-5">
-                            <p class="content-details-article">In order to write, one must read constantly, observe the
-                                world
-                                well, and
-                                take seriously the craft
-                                of writing. During this five-week course, we will focus on the last of these, the craft
-                                of
-                                writing—specifically, we will focus on three mainstays of fiction: character, dialogue,
-                                and
-                                scene.
-
-                                “I think that writers often feel more comfortable writing exposition and summary than
-                                scene,
-                                perhaps because in our own lives we often feel more comfortable observing than engaging,
-                                and
-                                scene is about getting our characters to engage,” says instructor Lori Ostlund. “In this
-                                class
-                                we will focus on creating scenes as a way to develop characters, demonstrate changes in
-                                them,
-                                and increase tension.
-
-                                “We will also spend a lot of time on dialogue, thinking about it as a way to reveal
-                                character
-                                and relationships and, perhaps most important, as a way to reveal the shifting power
-                                dynamics
-                                that are at work in those relationships and which create tension.”
-
-                                We will look at examples from short stories and novels and engage in in-class exercises
-                                that
-                                focus on these three craft building blocks. Participants will use these exercises to
-                                create
-                                work
-                                at home, which we will workshop during the last two weeks of class. “My goal,” Lori
-                                says,
-                                “is
-                                for us to think about these craft elements in ways that are new and generative.”</p>
-                            <!-- Share Button Wrapper -->
-                            <div class="share-btn-wrapper pt-5 pb-4">
-                                <ul class="d-flex pl-0">
-                                    <li class="pr-2">Share</li>
-                                    <li><img src="./icons/facebook_icon_share.svg" /></li>
-                                    <li><img src="./icons/facebook_icon_share.svg" /></li>
-                                    <li><img src="./icons/facebook_icon_share.svg" /></li>
-                                    <li><img src="./icons/facebook_icon_share.svg" /></li>
-                                </ul>
-                            </div>
-                            <!-- Share Button Wrapper End -->
-
-                            <!-- Class Schedule Start -->
-                            <div class="class-schedule-wrapper pt-5">
-                                <p class="class-schedule-heading">Class Schedule</p>
-                                <p class="time-schedule sub-heading">Time: <span
-                                        class="class-schedule-time-main">10:30am -
-                                        4:00pm
-                                        (PST)</span></p>
-                                <ul class="pl-0">
-                                    <li class="sub-heading">Dates</li>
-                                    <li>Tue<span class="class-timing">6/15</span></li>
-                                    <li>Tue<span class="class-timing">6/15</span></li>
-                                    <li>Tue<span class="class-timing">6/15</span></li>
-                                    <li>Tue<span class="class-timing">6/15</span></li>
-                                </ul>
-                            </div>
-                            <!-- Class Schedule End -->
-                        </div>
-                        <div class="col-4 review-section-content p-5">
-                            <img src="./icons/reviews_profile_photo.svg" class="center" />
-                            <p class="pt-5"> , MFA, writes fiction and nonfiction with a special emphasis on the power
-                                of place. Her
-                                work has been anthologized and published in venues such as Atlas Obscura, The Los
-                                Angeles
-                                Times,
-                                The Sun, and Best Women’s Travel Writing. She loves to see her students surprise and
-                                delight
-                                themselves (and others!), whether she’s teaching at City University of New York, the San
-                                Francisco Women’s Jail, or The Writing Salon. After many years of living abroad (from
-                                Oaxaca
-                                to
-                                Quito to San Jose, Costa Rica), she now lives in San Francisco. She is also the author
-                                of
-                                Living
-                                Abroad in Costa Rica.
-
-                            </p>
-                            <input type="button" value="See John's Reviews" class="review-section-button" />
-                        </div>
-                    </div>
-                    <div class="row ml-0 mr-0">
-                        <div class="col-12 main-quotes-wrapper">
-                            <main class="main-quotes-content ">
-                                <div class="row">
-                                    <div class="col-1">
-                                        <img src="./icons/double_quotes_left.svg" />
-                                    </div>
-                                    <div class="col-10">
-                                        <p>Erin was a wonderful teacher. She was personable, kind, organized, and great
-                                            with
-                                            facilitating group discussion.<br>
-                                            <span class="quotes_writer text-center">
-                                                Katy L.
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="col-1">
-                                        <img src="./icons/double_quotes_right_icon.svg" />
-                                    </div>
-                                </div>
-                            </main>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- main-center-content-end -->
-
-            <section class="similar-class-section jumbotron jumbotron-fluid pt-0">
-                <div class="container similar-class-wrapper">
-                    <p class="sub-heading pb-4">Similar Classes</p>
-                    <div class="row">
-                        <div class="col-4">
-                            <p>The Art of the Prose Sentence: Challenging Your Sentences to Do More<br>
-                                <span class="btn">Learn More ></span>
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <p>The Art of the Prose Sentence: Challenging Your Sentences to Do More<br>
-                                <span class="btn">Learn More ></span>
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <p>The Art of the Prose Sentence: Challenging Your Sentences to Do More<br>
-                                <span class="btn">Learn More ></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="remote-class-section">
-                <div class="container remote-class-wrapper">
-                    <p class="sub-heading">About the Remote Classes</p>
-                    <article>
-                        You will be able to participate in live class meetings via Zoom videoconference. To attend
-                        classes,
-                        you'll need a phone, tablet or computer and access to the internet. You can participate in the
-                        class
-                        from wherever you'd like, whether on your living room couch or in your office. Before your class
-                        meets,
-                        you'll receive an email from The Proprietary with more information about Zoom and your remote
-                        class.
-                        If
-                        you have any questions about remote learning, please don't hesitate to reach out to us at
-                        hello@wisdmlabs.com.
-                    </article>
-                    <div class="remote-class-btn">
-                        <a href="#">Learn About Our Classes ></a>
-                        <a href="#">
-                            Questions? See FAQ >
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cancellation-policy pt-3">
-                <div class="container">
-                    <p class="sub-heading">Cancelation Policy</p>
-                    <p>In the event of an emergency, we may consider a refund or credit, whether partial or full. We
-                        review
-                        these requests on a case-by-case basis, and we ask that you notify us as near as possible to the
-                        start
-                        date for the class. Please read our policy details before requesting a refund.</p>
-                    <div class="row cancellation-policy-days-span pt-3">
-                        <div class="col-3">
-                            <p><span>3-9 days</span>
-                                before the start date for a class, the registrant will receive a credit minus a 20% fee
-                                OR a
-                                refund minus a 30% fee.</p>
-                        </div>
-                        <div class="col-3">
-                            <p><span>3-9 days</span>
-                                before the start date for a class, the registrant will receive a credit minus a 20% fee
-                                OR a
-                                refund minus a 30% fee.</p>
-                        </div>
-                        <div class="col-3">
-                            <p><span>2 days or less</span>
-                                before the start date for a class, the registrant will not receive a credit or a refund.
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            <p><span>On the day or after</span>
-                                The Proprietary cannot offer refunds, credits, or makeup sessions for classes a student
-                                might
-                                miss.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-
-        <!-- footer start -->
-        <footer>
-            <div class="jumbotron jumbotron-fluid bg-dark">
-                <div class="container footer-main">
-                    <div class="row">
-                        <div class="col-8 footer-content-wrapper pt-5">
-                            <p><a href="#">Who We Are / Gift A Class / Membership / Refund Policy / FAQ
-                                </a></p>
-                            <p class="sub-heading contact pt-5">Contact</p>
-                            <p class="footer-sub-heading">2035 Sunset Lake Road, Suite B-2, Newark, Delaware, 19702</p>
-                            <p><span class="sub-heading">Office Phone:</span> (510) 987-6543 <span
-                                    class="sub-heading">Email</span> hello@wisdmlabs.com </p>
-                            <pre class="text-light"> © 2022 All rights reserved.</pre>
-                        </div>
-                        <div class="col-4 subscribe-section">
-                            <p class="sub-heading">Get Our Lastest News</p>
-                            <input type="text" value="Enter Your Email" class="enter-email" />
-                            <input type="button" value="Subscribe" class="subscribe-btn" />
-                            <ul class="pt-5">
-                                <li><img src="./icons/twitter-icon.svg" /></li>
-                                <li><img src="./icons/facebook_icon_share.svg" /></li>
-                                <li><img src="./icons/twitter-icon.svg" /></li>
-                            </ul>
-                            <pre class="text-light">Privacy & Terms</pre>
-                        </div>
-                    </div>
+    <div id="loginbox" class="lightbox">
+        <div class="horizontal">
+            <div class="vertical">
+                <div class="box">
+                    <input style="margin: 16px; text-align: center;" id="password" type="password"
+                        placeholder="password" /> <br />
+                    <button id="loginbutton" type="button">Enter</button>
+                    <p id="wrongPassword" style="display: none">wrong password</p>
                 </div>
             </div>
-        </footer>
-        <!-- footer end -->
-    </section>
+        </div>
+    </div>
 
 
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+    <script type="text/javascript">
+        "use strict";
+
+
+        function loadPage(pwd) {
+
+            var hash = pwd;
+            hash = Sha1.hash(pwd);
+            var url = hash + "/index.html";
+
+            $.ajax({
+                url: url,
+                dataType: "html",
+                success: function (data) {
+
+                    window.location = url;
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+
+
+                    parent.location.hash = hash;
+
+                    //$("#wrongPassword").show();
+                    $("#password").attr("placeholder", "wrong password");
+                    $("#password").val("");
+                }
+            });
+        }
+
+
+        $("#loginbutton").on("click", function () {
+            loadPage($("#password").val());
+        });
+        $("#password").keypress(function (e) {
+            if (e.which == 13) {
+
+                loadPage($("#password").val());
+            }
+        });
+        $("#password").focus();
+
+    </script>
 
 </body>
 
